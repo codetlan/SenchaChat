@@ -1,0 +1,18 @@
+{
+  "name": "SenchaChat",
+  "description": "This is a demo application for a chat using sencha touch",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "3.x",
+    "socket.io": "0.9.6",
+	"connect": "1.8.5"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  },
+  "subdomain": "sencha-chat",
+  "scripts": {
+    "start": "app.js"
+  }
+}
