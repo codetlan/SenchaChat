@@ -7,6 +7,7 @@ var express = require('express'),
 	connect = require('connect'),
 	port = process.env.PORT || 8080;
 
+//the app configuration
 app.configure(function() {
     app.use(connect.static('./public'));
 	app.set('appIndex', './public/index.html');
@@ -14,11 +15,12 @@ app.configure(function() {
 	app.use(express.logger());
 	app.use(express.errorHandler({ dumpExceptions: true }));
 });
-
+//we start teh server
 server.listen(port, function() {
     console.log("Listening on " + port);
 });
 
+//set the routes
 app.get('/', function(req, res) {
 	res.sendfile(app.set('appIndex'));
 });
