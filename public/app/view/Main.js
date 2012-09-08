@@ -41,7 +41,8 @@ Ext.define("Senchat.view.Main", {
 	configureSocket : function() {
 		var me = this;
 		//socket = io.connect('http://localhost:8080');
-		socket = io.connect('http://senchat.jit.su');
+		//socket = io.connect('http://senchat.jit.su');
+		socket = io.connect("http://labbbs.net");
 		// on connection to server, ask for user's name with an anonymous callback
 		socket.on('connect', function() {
 			//ask the user the name when the client conects 

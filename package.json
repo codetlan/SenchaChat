@@ -1,7 +1,7 @@
 {
   "name": "SenchaChat",
   "description": "This is a demo application for a chat using sencha touch",
-  "version": "0.0.1-1",
+  "version": "0.0.1-2",
   "dependencies": {
     "express": "3.x",
     "socket.io": "0.9.6",
